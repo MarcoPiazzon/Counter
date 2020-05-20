@@ -1,5 +1,6 @@
 var countDate = new Date('June 6, 2020 00:00:00 GMT+00.00').getTime();
         function countdown() {
+        console.log(countDate+" Prova countDate");
             var now = new Date().getTime();
             var gap = countDate-now;
 
