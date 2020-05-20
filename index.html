@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <h2><span>Countdown alla fine della scuola</span>2020</h2>
+        <h2><span>Countdown</span>2020</h2>
         <div class="countdown">
             <div id="day">NA</div>
             <div id="hour">NA</div>
@@ -18,33 +17,6 @@
             <div id="second">NA</div>
         </div>
     </div>
-    <script type="text/javascript">
-        var countDate = new Date('Dic 25, 2020 00:00:00').getTime;
-        function countdown() {
-            var now = new Date().getTime;
-
-            gap = countDate-now;
-
-            var second = 1000;
-            var minute = second *60;
-            var hour = minute * 60;
-            var day = hour * 24;
-
-            var d= Math.floor(gap/(day));
-            var h = Math.floor((gap % (day)) / (hour));
-            var m = Math.floor((gap % (hour)) / (minute));
-            var s = Math.floor((gap % (minute))/ second);
-
-            document.getElementById('day').innerHTML = d;
-            document.getElementById('hour').innerHTML = h;
-            document.getElementById('minute').innerHTML = m;
-            document.getElementById('second').innerHTML = s;
-        }
-
-        setInterval(function(){
-            countdown();
-        },1000)
-    </script>
 
 </body>
 

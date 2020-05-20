@@ -25,7 +25,7 @@ body{
     align-items: center;
     flex-direction: column;
     box-shadow: 0 50px 50px rgba(0,0,0,0.5),
-                0 0 0 100px rgba(0,0,0,1);
+                0 0 0 100px rgba(0,0,0,.1);
 
 }
 
@@ -63,7 +63,8 @@ body{
 
 }
 
-.countdown div:before{
+.countdown div:before
+{
     content: '';
     position: absolute;
     bottom: -30px;
